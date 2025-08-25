@@ -1,0 +1,78 @@
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="companyIdentityModalLabel"><i class="bi bi-building"></i> Identitas Perusahaan dan P2K3</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-content custom-content">
+                <div class="company-info-section">
+                    <h6 class="section-subtitle"><i class="bi bi-info-circle"></i> Informasi Perusahaan</h6>
+                    
+                    <div class="form-group custom-group mb-3">
+                        <label for="company-logo">Logo Perusahaan</label>
+                        <input type="file" id="company-logo" name="company-logo" class="form-control custom-input" 
+                               accept="image/*">
+                        <div class="form-text">Format: JPG, PNG, GIF (Maks. 2MB)</div>
+                    </div>
+                    
+                    <div class="form-grid custom-grid">
+                        <div class="form-group custom-group">
+                            <label for="company-name" class="required">Nama Perusahaan</label>
+                            <input type="text" id="company-name" name="company-name" class="form-control custom-input" 
+                                   placeholder="Contoh : PT. Isr Project" required>
+                        </div>
+                        <div class="form-group custom-group">
+                            <label for="company-address" class="required">Alamat Lengkap</label>
+                            <textarea id="company-address" name="company-address" rows="2" class="form-control custom-input" 
+                                      placeholder="Masukan Alamat lengkap perusahaan termasuk kode pos" required></textarea>
+                        </div>
+                        <div class="form-group custom-group">
+                            <label for="company-region" class="required">Wilayah</label>
+                            <select id="company-region" name="company-region" class="form-select custom-input" required>
+                                <option value="">Pilih Wilayah</option>
+                                <option value="Kota Bekasi">Kota Bekasi</option>
+                                <option value="Kab. Bekasi">Kab. Bekasi</option>
+                                <option value="Kab. Karawang">Kab. Karawang</option>
+                                <option value="Kab. Purwakarta">Kab. Purwakarta</option>
+                                <option value="Kab. Subang">Kab. Subang</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-group custom-group" id="other-region-container" style="display: none;">
+                            <label for="other-region" class="required">Wilayah Lainnya</label>
+                            <input type="text" id="other-region" name="other-region" class="form-control custom-input" 
+                                   placeholder="Masukkan wilayah lainnya">
+                        </div>
+                        <div class="form-group custom-group">
+                            <label for="npwp" class="required">NPWP</label>
+                            <input type="text" id="npwp" name="npwp" class="form-control custom-input" 
+                                   placeholder="Nomor Pokok Wajib Pajak perusahaan" required>
+                        </div>
+                        <div class="form-group custom-group">
+                            <label for="business-type" class="required">Jenis Usaha / KLUI</label>
+                            <input type="text" id="business-type" name="business-type" class="form-control custom-input" 
+                                   placeholder="Jenis usaha sesuai Klasifikasi Lapangan Usaha Indonesia" required>
+                        </div>
+                        <div class="form-group custom-group">
+                            <label for="male-workers" class="required">Tenaga Kerja Pria</label>
+                            <input type="number" id="male-workers" name="male-workers" min="0" class="form-control custom-input" 
+                                   placeholder="Jumlah tenaga kerja pria" required>
+                        </div>
+                        <div class="form-group custom-group">
+                            <label for="female-workers" class="required">Tenaga Kerja Wanita</label>
+                            <input type="number" id="female-workers" name="female-workers" min="0" class="form-control custom-input" 
+                                   placeholder="Jumlah tenaga kerja wanita" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary" id="save-company-data">
+                <i class="bi bi-check-circle"></i> Simpan Data
+            </button>
+        </div>
+    </div>
+</div>
