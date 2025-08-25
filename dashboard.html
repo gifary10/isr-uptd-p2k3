@@ -1,0 +1,44 @@
+<!-- dashboard.html - Tambahkan ID untuk stats -->
+<div class="dashboard-content">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="card custom-card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="bi bi-clock-history"></i> Laporan Terbaru
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div id="recent-reports-list">
+                        <p class="text-center text-muted py-4">Memuat laporan...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-5">
+            <div class="card custom-card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="bi bi-bar-chart"></i> Statistik
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row" id="dashboard-stats">
+                        <!-- Stats akan diisi oleh JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tombol aksi -->
+            <div class="d-flex gap-2 mt-3">
+                <button id="btn-new-report" class="btn btn-primary flex-fill">
+                    <i class="bi bi-plus-circle"></i> Laporan Baru
+                </button>
+                <button id="btn-view-reports" class="btn btn-outline-primary flex-fill">
+                    <i class="bi bi-list-check"></i> Lihat Semua
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+<div class="section-header">
+    <div class="section-title custom-title">
+        <span><i class="bi bi-file-text"></i> Penutup</span>
+    </div>
+</div>
+
+<div class="form-content custom-content">
+    <div class="closing-section">
+        <div class="form-grid custom-grid">
+            <div class="form-group custom-group">
+                <label for="report-date" class="required">Tanggal Pembuatan Laporan</label>
+                <input type="date" id="report-date" name="report-date" class="form-control custom-input" required>
+            </div>
+            
+            <div class="form-group custom-group">
+                <label for="p2k3-chairman" class="required">Ketua P2K3</label>
+                <input type="text" id="p2k3-chairman" name="p2k3-chairman" class="form-control custom-input" required>
+            </div>
+            
+            <div class="form-group custom-group">
+                <label for="p2k3-secretary" class="required">Sekretaris P2K3</label>
+                <input type="text" id="p2k3-secretary" name="p2k3-secretary" class="form-control custom-input" required>
+            </div>
+            
+        </div>
+    </div>
+    
+   <!-- Di dalam section-e.html, perbarui bagian signature -->
+<div class="signature-section mt-4">
+    <div class="card custom-card">
+        <div class="card-header">
+            <h6 class="mb-0"><i class="bi bi-pen"></i> Kolom Tanda Tangan</h6>
+        </div>
+        <div class="card-body">
+            <div class="row signature-fields">
+                <div class="col-md-4 text-center">
+                    <div class="signature-box">
+                        <p class="signature-label">Ketua P2K3</p>
+                        <img id="p2k3-chairman-signature-preview" class="signature-preview" style="display: none; max-height: 60px; margin-bottom: 10px;">
+                        <button type="button" class="btn btn-sm btn-outline-primary mb-2" onclick="openSignatureModal('p2k3-chairman-signature')">
+                            <i class="bi bi-pen"></i> Tanda Tangan
+                        </button>
+                        <input type="hidden" id="p2k3-chairman-signature" name="p2k3-chairman-signature">
+                        <div class="signature-line"></div>
+                        <p class="signature-name" id="chairman-name">Nama Ketua</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="signature-box">
+                        <p class="signature-label">Sekretaris P2K3</p>
+                        <img id="p2k3-secretary-signature-preview" class="signature-preview" style="display: none; max-height: 60px; margin-bottom: 10px;">
+                        <button type="button" class="btn btn-sm btn-outline-primary mb-2" onclick="openSignatureModal('p2k3-secretary-signature')">
+                            <i class="bi bi-pen"></i> Tanda Tangan
+                        </button>
+                        <input type="hidden" id="p2k3-secretary-signature" name="p2k3-secretary-signature">
+                        <div class="signature-line"></div>
+                        <p class="signature-name" id="secretary-name">Nama Sekretaris</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+    
+    <div class="submission-section mt-4">
+        <div class="card custom-card">
+            <div class="card-body">
+                <div class="submission-info">
+                    <h6><i class="bi bi-info-circle"></i> Informasi Pengiriman Laporan</h6>
+                    <p class="small mb-0">Setelah mengisi semua data dengan lengkap, klik tombol "Kirim Laporan" untuk menyimpan dan mengirimkan laporan. Laporan akan tersimpan dalam sistem dan dapat diakses kapan saja.</p>
+                </div>
+                
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" id="confirmation-check" required>
+                    <label class="form-check-label" for="confirmation-check">
+                        Saya menyatakan bahwa data yang diisi dalam laporan ini adalah benar dan dapat dipertanggungjawabkan.
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

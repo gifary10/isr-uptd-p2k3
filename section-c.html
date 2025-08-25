@@ -1,0 +1,104 @@
+<div class="section-header">
+    <div class="section-title custom-title">
+        <span><i class="bi bi-calendar-event"></i>Rincian Kegiatan P2K3 yang Telah Dilaksanakan</span>
+    </div>
+    <div class="section-description">
+        <p>Lengkapi informasi mengenai kegiatan P2K3 yang telah dilaksanakan selama periode laporan.</p>
+    </div>
+</div>
+
+<div class="form-content custom-content">
+    <div class="activity-section">
+        <div class="activity-header">
+            <h3 class="custom-subtitle"><i class="bi bi-chat-dots"></i> 1. Rapat dan Musyawarah</h3>
+        </div>
+        
+        <div class="table-container">
+            <div class="table-responsive custom-table">
+                <table id="meetings" class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th class="date-column">Tanggal</th>
+                            <th class="agenda-column">Materi/Agenda</th>
+                            <th class="result-column">Keputusan/Hasil</th>
+                            <th class="action-column">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="date" name="meeting-date[]" class="form-control form-control-sm"></td>
+                            <td><input type="text" name="meeting-agenda[]" class="form-control form-control-sm" placeholder="Agenda rapat"></td>
+                            <td><input type="text" name="meeting-result[]" class="form-control form-control-sm" placeholder="Hasil rapat"></td>
+                            <td><button type="button" class="btn btn-sm btn-danger remove-row"><i class="bi bi-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" id="add-meeting" class="btn btn-sm btn-success custom-btn"><i class="bi bi-plus-circle"></i> Tambah Rapat</button>
+        </div>
+    </div>
+    
+    <div class="activity-section">
+        <div class="activity-header">
+            <h3 class="custom-subtitle"><i class="bi bi-search"></i> 2. Pemeriksaan, Inspeksi, dan Pengawasan</h3>
+        </div>
+        
+        <div class="table-container">
+            <div class="table-responsive custom-table">
+                <table id="inspections" class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th class="type-column">Jenis Kegiatan</th>
+                            <th class="frequency-column">Frekuensi</th>
+                            <th class="findings-column">Temuan Penting</th>
+                            <th class="followup-column">Tindak Lanjut</th>
+                            <th class="action-column">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="inspection-type[]" class="form-control form-control-sm" placeholder="Jenis pemeriksaan"></td>
+                            <td><input type="number" name="inspection-frequency[]" min="0" class="form-control form-control-sm" placeholder="Jumlah"></td>
+                            <td><input type="text" name="inspection-findings[]" class="form-control form-control-sm" placeholder="Temuan"></td>
+                            <td><input type="text" name="inspection-followup[]" class="form-control form-control-sm" placeholder="Tindak lanjut"></td>
+                            <td><button type="button" class="btn btn-sm btn-danger remove-row"><i class="bi bi-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" id="add-inspection" class="btn btn-sm btn-success custom-btn"><i class="bi bi-plus-circle"></i> Tambah Pemeriksaan</button>
+        </div>
+    </div>
+    
+    <div class="activity-section">
+        <div class="activity-header">
+            <h3 class="custom-subtitle"><i class="bi bi-mortarboard"></i> 3. Pelatihan, Sosialisasi, dan Promosi K3</h3>
+        </div>
+        
+        <div class="table-container">
+            <div class="table-responsive custom-table">
+                <table id="trainings" class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th class="type-column">Jenis Kegiatan</th>
+                            <th class="participants-column">Jumlah Peserta</th>
+                            <th class="date-column">Tanggal</th>
+                            <th class="description-column">Uraian Singkat</th>
+                            <th class="action-column">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="training-type[]" class="form-control form-control-sm" placeholder="Jenis pelatihan"></td>
+                            <td><input type="number" name="training-participants[]" min="0" class="form-control form-control-sm" placeholder="Jumlah"></td>
+                            <td><input type="date" name="training-date[]" class="form-control form-control-sm"></td>
+                            <td><input type="text" name="training-description[]" class="form-control form-control-sm" placeholder="Deskripsi"></td>
+                            <td><button type="button" class="btn btn-sm btn-danger remove-row"><i class="bi bi-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" id="add-training" class="btn btn-sm btn-success custom-btn"><i class="bi bi-plus-circle"></i> Tambah Pelatihan</button>
+        </div>
+    </div>
+</div>

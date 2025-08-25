@@ -1,0 +1,92 @@
+<div class="section-header">
+    <div class="section-title custom-title">
+        <span><i class="bi bi-bar-chart"></i>Data Statistik Kecelakaan Kerja, PAK, dan Hampir Celaka</span>
+    </div>
+    <div class="section-description">
+        <p>Isilah data statistik kecelakaan kerja, penyakit akibat kerja, dan kejadian hampir celaka selama periode laporan.</p>
+    </div>
+</div>
+
+<div class="form-content custom-content">
+    <div class="statistics-grid">
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-clock-history"></i>
+            </div>
+            <div class="stat-form">
+                <label for="total-hours" class="required">Total Jam Kerja (Man Hours)</label>
+                <input type="number" id="total-hours" name="total-hours" min="0" class="form-control custom-input" required>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-exclamation-triangle"></i>
+            </div>
+            <div class="stat-form">
+                <label for="accidents" class="required">Kecelakaan Kerja (Lost Time Injury)</label>
+                <input type="number" id="accidents" name="accidents" min="0" class="form-control custom-input" required>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-calendar-x"></i>
+            </div>
+            <div class="stat-form">
+                <label for="lost-days" class="required">Hari Kerja Hilang (Lost Work Days)</label>
+                <input type="number" id="lost-days" name="lost-days" min="0" class="form-control custom-input" required>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-heart-pulse"></i>
+            </div>
+            <div class="stat-form">
+                <label for="occupational-diseases" class="required">Penyakit Akibat Kerja (PAK)</label>
+                <input type="number" id="occupational-diseases" name="occupational-diseases" min="0" class="form-control custom-input" required>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-shield-exclamation"></i>
+            </div>
+            <div class="stat-form">
+                <label for="near-misses" class="required">Laporan Hampir Celaka (Near Miss)</label>
+                <input type="number" id="near-misses" name="near-misses" min="0" class="form-control custom-input" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="calculation-results mt-4">
+        <div class="card custom-card">
+            <div class="card-header">
+                <h6 class="mb-0"><i class="bi bi-calculator"></i> Hasil Perhitungan</h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="result-item">
+                            <span class="result-label">Frekuensi Rate:</span>
+                            <span id="frequency-rate" class="result-value">0</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="result-item">
+                            <span class="result-label">Severity Rate:</span>
+                            <span id="severity-rate" class="result-value">0</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="result-item">
+                            <span class="result-label">Average Severity Rate:</span>
+                            <span id="average-severity-rate" class="result-value">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

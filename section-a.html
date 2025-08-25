@@ -1,0 +1,76 @@
+<div class="section-header">
+    <div class="section-title custom-title">
+        <span><i class="bi bi-card-heading"></i>Data Pelaporan P2K3</span>
+    </div>
+</div>
+
+<div class="form-content custom-content">
+    <div class="report-identity-section">
+        <div class="form-grid custom-grid">
+            <div class="form-group custom-group">
+                <label for="report-number" class="required">Nomor Laporan</label>
+                <input type="text" id="report-number" name="report-number" class="form-control custom-input" 
+                       placeholder="Nomor laporan P2K3" required>
+                <div class="help-text">Format: P2K3/001/TRW-I/2024</div>
+            </div>
+            
+            <div class="form-group custom-group">
+                <label for="report-period-a" class="required">Periode Laporan</label>
+                <select id="report-period-a" name="report-period-a" class="form-select custom-input" required>
+                    <option value="">Pilih Periode Laporan</option>
+                    <option value="q1">Triwulan I (Januari - Maret)</option>
+                    <option value="q2">Triwulan II (April - Juni)</option>
+                    <option value="q3">Triwulan III (Juli - September)</option>
+                    <option value="q4">Triwulan IV (Oktober - Desember)</option>
+                </select>
+            </div>
+            
+            <div class="form-group custom-group">
+                <label for="report-year-a" class="required">Tahun</label>
+                <input type="number" id="report-year-a" name="report-year-a" min="2000" max="2100" 
+                       class="form-control custom-input" placeholder="Tahun laporan" required>
+            </div>
+        </div>
+    </div>
+    
+    <div class="members-section mt-4">
+        <div class="activity-header">
+            <div class="section-title custom-title">
+              <span><i class="bi bi bi-people-fill"></i>Susunan Anggota P2K3</span>
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <div class="table-responsive custom-table">
+                <table id="p2k3-members-a" class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th class="name-column">Nama Lengkap</th>
+                            <th class="position-column">Jabatan di Perusahaan</th>
+                            <th class="p2k3-position-column">Jabatan di P2K3</th>
+                            <th class="action-column">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="member-name-a[]" class="form-control form-control-sm" placeholder="Nama lengkap" required></td>
+                            <td><input type="text" name="member-position-a[]" class="form-control form-control-sm" placeholder="Jabatan di perusahaan" required></td>
+                            <td>
+                                <select name="member-p2k3-position-a[]" class="form-select form-select-sm" required>
+                                    <option value="">Pilih Jabatan</option>
+                                    <option value="ketua">Ketua</option>
+                                    <option value="wakil">Wakil Ketua</option>
+                                    <option value="sekretaris">Sekretaris</option>
+                                    <option value="bendahara">Bendahara</option>
+                                    <option value="anggota">Anggota</option>
+                                </select>
+                            </td>
+                            <td><button type="button" class="btn btn-sm btn-danger remove-row"><i class="bi bi-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" id="add-member-a" class="btn btn-sm btn-success custom-btn"><i class="bi bi-plus-circle"></i> Tambah Anggota</button>
+        </div>
+    </div>
+</div>
